@@ -1,0 +1,32 @@
+# Build & Cache Artifacts
+build/
+**/build/
+.gradle/
+node_modules/
+__pycache__/
+*.pyc
+.cxx/
+.externalNativeBuild/
+*.apk
+*.aab
+*.ap_
+
+# Device & Local IDE Paths
+local.properties
+.idea/
+.acside/
+*.iml
+.DS_Store
+
+# Secrets & Signing Keys
+*.env*
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+*.pk8
+id_rsa*
+id_ed25519*
+secrets.*

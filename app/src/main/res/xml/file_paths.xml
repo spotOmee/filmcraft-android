@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="app_files" path="." />
+    <cache-path name="app_cache" path="." />
+    <external-files-path name="ext_files" path="." />
+    <external-path name="ext_storage" path="." />
+    <root-path name="root" path="." />
+</paths>
