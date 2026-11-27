@@ -139,7 +139,7 @@ jobs:
           gh release create "$TAG" final-apk/*.apk \
             --title "APK Build #${{ github.run_number }}" \
             --notes "Automated Android build #${{ github.run_number }}. Verified and ready for installation." \
-            --clobber || true
+            || gh release upload "$TAG" final-apk/*.apk --clobber
           echo "release_url=https://github.com/${{ github.repository }}/releases/tag/${TAG}" >> $GITHUB_OUTPUT
 
       - name: Deliver APK to Telegram (Auto-Bypass 50 MB Limit)
